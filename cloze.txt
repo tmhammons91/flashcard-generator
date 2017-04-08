@@ -1,0 +1,4 @@
+{
+  "text": "The capital of Texas is Austin",
+  "cloze": "Austin"
+}

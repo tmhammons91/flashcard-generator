@@ -1,0 +1,7 @@
+{
+  "front": "What is the capital of the United States?",
+  "back": "Washington DC"
+}{
+  "front": "What is the capital of Canada?",
+  "back": "Ottawa"
+}
