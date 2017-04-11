@@ -44,7 +44,7 @@ var createBasic = function () {
     ]).then(function (data) {
         var newBasicCard = new BasicCard(data.basicFront, data.basicBack);
         newBasicCard.logBasicTxt();
-        newBasicCard.printBasic(); 
+        newBasicCard.printBasic();
         //readBasic();
     })
 };
@@ -57,5 +57,7 @@ var readBasic = function () {
     })
 }
 
-createBasic();
-
+module.exports = {
+    createBasic: createBasic,
+    BasicCard: BasicCard
+}

@@ -1,0 +1,29 @@
+{
+  "name": "flashcard-generator",
+  "version": "0.1.1",
+  "description": "flashcard generator app using constructors and composition techniques",
+  "main": "basic-card-constructor.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tmhammons91/flashcard-generator.git"
+  },
+  "keywords": [
+    "flashcard",
+    "constructors",
+    "composition"
+  ],
+  "author": "TH",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tmhammons91/flashcard-generator/issues"
+  },
+  "homepage": "https://github.com/tmhammons91/flashcard-generator#readme",
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "inquirer": "^3.0.6"
+  },
+  "devDependencies": {}
+}

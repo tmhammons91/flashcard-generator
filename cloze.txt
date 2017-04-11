@@ -1,4 +1,10 @@
 {
   "text": "The capital of Texas is Austin",
   "cloze": "Austin"
+}{
+  "text": "The capital of Idaho is Boise",
+  "cloze": "Boise"
+}{
+  "text": "The capital of Wyoming is Cheyenne",
+  "cloze": "cheyenne"
 }

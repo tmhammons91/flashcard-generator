@@ -19,7 +19,7 @@ ClozeCard.prototype.readCloze = function () {
     fs.readFile("cloze.txt", "utf8", function (err, data) {
         data = data.split("\n");
         console.log(data)
-    }) 
+    })
 };
 
 ClozeCard.prototype.showFull = function () {
@@ -31,10 +31,15 @@ ClozeCard.prototype.showCloze = function () {
 };
 
 ClozeCard.prototype.showPartial = function () {
-    var string = this.text.toLowerCase(); 
-    var phrase = this.cloze.toLowerCase();
-    var partial = string.replace(phrase, '...');
-    console.log("The partial text of the Cloze Card is: " + partial);
+    var stringLowered = this.text.toLowerCase();
+    var phraseLowered = this.cloze.toLowerCase();
+    if (this.text.search(this.cloze) !== -1) {
+        var partial = this.text.replace(this.cloze, '...');
+        console.log("The partial text of the Cloze Card is: " + partial);
+    } else if (stringLowered.search(phraseLowered) !== -1) {
+        var partialLowered = stringLowered.replace(phraseLowered, '...')
+        console.log("The partial text of the Cloze Card is: " + partialLowered);
+    }
 }
 
 //Main Process ============================
@@ -68,6 +73,9 @@ var createCloze = function () {
     })
 };
 
-createCloze();
+module.exports = {
+    createCloze: createCloze,
+    ClozeCard: ClozeCard
+}
 
 
